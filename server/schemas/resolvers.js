@@ -39,21 +39,23 @@ const resolvers = {
 
     saveBook: async (parent, {input}, context) => {
       const {user} = context
-
+    
       if (user) {
         const updateuser = await User.findByIdAndUpdate(
           { _id: user._id },
           { $addToSet: { savedBooks: input } },
-          { new: true }
+          { new: true,runValidators: true }
         );
         return updateuser;
       }
       throw new AuthenticationError("You need to be logged in!");
     },
     removeBook: async (parent, {bookId}, context) => {
-      if (context.user) {
+
+      const {user} = context
+      if (user) {
         const updateuser = await User.findByIdAndUpdate(
-          { _id: context.user._id },
+          { _id: user._id },
           { $pull: { savedBooks: { bookId } } },
           { new: true }
         );
