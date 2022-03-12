@@ -1,6 +1,8 @@
 # Book Search Engine
 ![GitHub license](https://img.shields.io/badge/License-MIT-yellow.svg)
 
+App deployed on Heroku: https://stark-gorge-62776.herokuapp.com/
+
 ## Description
 Google Books API search engine built with a RESTful API, and refactor it to be a GraphQL API built with Apollo Server.The app was built using the MERN stack with a React front end, MongoDB database, and Node.js/Express.js server and API.
 
@@ -16,7 +18,7 @@ Google Books API search engine built with a RESTful API, and refactor it to be a
 Cloning the repo from Github. run npm install. npm run develop
 
 ## Usage
-na
+App deployed on Heroku: https://stark-gorge-62776.herokuapp.com/
 
 ## License
 MIT
