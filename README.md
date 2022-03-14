@@ -11,7 +11,6 @@ Google Books API search engine built with a RESTful API, and refactor it to be a
 - [Usage](#usage)
 - [License](#license)
 - [Contributing](#Contributing)
-- [Test](#Test)
 - [Questions](#Questions)
 
 ## Installation
@@ -27,8 +26,6 @@ Info on license: https://opensource.org/licenses/MIT
 ## Contributing 
 Contributors are welcome. Installation above.
 
-## TestTest
-npm test
 
 ## Questions 
 Email me at: romeodixonll@yahoo.com </br>
